@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('images/background.png');
+    background-size: cover; /* Ensures the background image covers the entire viewport */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    background-attachment: fixed; /* Fixes the background image while scrolling */
+    color: #ffffff; /* Sets text color to white, change it to your preference */
+    font-family: 'Roboto', sans-serif; /* Specifies the font for the text, change it if needed */
+}
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 90px;
+    cursor: pointer;
+}
+nav{
+    flex:1;
+    text-align: right;
+}
+.navbar a:hover,
+.navbar a.active{
+    color: blue;
+}
