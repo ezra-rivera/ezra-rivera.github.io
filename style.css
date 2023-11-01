@@ -1,12 +1,15 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url('images/background.png');
+    background-image: url('images/black.jpeg');
     background-size: cover; /* Ensures the background image covers the entire viewport */
     background-repeat: no-repeat; /* Prevents the background image from repeating */
     background-attachment: fixed; /* Fixes the background image while scrolling */
     color: #ffffff; /* Sets text color to white, change it to your preference */
     font-family: 'Roboto', sans-serif; /* Specifies the font for the text, change it if needed */
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
 }
 .navbar{
     height: 12%;
@@ -14,14 +17,95 @@ body {
     align-items: center;
 }
 .logo{
-    width: 90px;
+    width: 100px;
     cursor: pointer;
 }
 nav{
     flex:1;
     text-align: right;
 }
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+}
 .navbar a:hover,
 .navbar a.active{
-    color: blue;
+    color: rgb(200, 31, 31);
+}
+.row {
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+.col{
+    flex-basis: 50%;
+}
+h1{
+    color: #fff;
+    font-size: 50px;
+}
+p{
+    color: #fff;
+    font-size: 16px;
+    line-height: 15px;
+}
+button{
+    width: 180px;
+    color: #000;
+    font-size: 12px;
+    padding: 12px 0;
+    background: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+}
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5;
+}
+.card1{
+    background-image: url(images/logo.jpeg);
+}
+.card2{
+    background-image: url(images/3car.jpeg);
+}
+.card3{
+    background-image: url(images/circuitlogo.jpeg);
+}
+.card4{
+    background-image: url(images/teamslogo.webp);
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+h5{
+    color:#fff;
+    text-shadow: 0 0 5px #999;
+}
+.card p{
+    text-shadow: 0 0 15px #000;
+    font-size: 11px;
+}
+footer{
+    width: 100%;
+    text-align: left;
+    font-size: 15px;
+    bottom: 0;
+    position: fixed;
 }
