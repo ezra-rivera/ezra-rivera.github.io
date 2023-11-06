@@ -106,6 +106,6 @@ footer{
     width: 100%;
     text-align: left;
     font-size: 15px;
-    bottom: 1;
+    bottom: 0;
     position: fixed;
 }
