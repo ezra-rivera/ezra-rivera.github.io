@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>f1</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function validate()
+        {
+            var username = document.signup.uname.value;
+            var firstname = document.signup.fname.value;
+            var lastname = document.signup.lname.value;
+            var password = document.signup.pass.value;
+            var cpassword = document.signup.cpass.value;
+
+            if (username=="" || firstname=="" || lastname=="" || password=="" || cpassword=="")
+            {
+                alert("Fill in all fields")
+            }
+            else{
+                if(password.length< 8 || password.length > 15)
+                {
+                    alert("Password should be 8-15 characters")
+                }
+                else{
+                    if(password != cpassword)
+                    {
+                        alert("Passwords do not match")
+                    }
+                    else{
+                        alert("Form submitted successfully")
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+             <div class="navbar">
+                <img src="images/logo2.png" class="logo">
+                <nav>
+                    <ul>
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="region.html">REGION</a></li>
+                        <li><a href="about.html">Contact Us</a></li>
+                        <li><a href="teams.html"></a></li>
+                    </ul>
+                </nav>
+             </div>
+             <div class="content">
+                <form name="signup">
+                    <fieldset>
+                        <legend>Sign Up</legend>
+                    <table>
+                    <tr>
+                        <td><label>Username:</label></td>
+                        <td><input type="text" name="uname"/><br/></td>
+                    </tr>
+                    <tr>
+                        <td><label>First Name</label></td>
+                        <td><input type="text" name="fname"/><br/></td>
+                    </tr>
+                    <tr>
+                        <td><label>Last Name</label></td>
+                        <td><input type="text" name="lname"/><br/></td>
+                    </tr>
+                    <tr>
+                        <td><label>Password</label></td>
+                        <td><input type="password" name="pass"/><br/></td>
+                    </tr>
+                    <tr>
+                       <td><label>Confirm Password</label></td>
+                        <td><input type="password" name="cpass"/><br/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" onclick="validate()"/></td>
+                    </tr>
+                    </table>
+                    </fieldset>
+                </form>
+             </div>
+             <footer>
+                Copyright &copy; Esdras & Jorge CSCI 1101
+            </footer>
+</body>
+</html>
