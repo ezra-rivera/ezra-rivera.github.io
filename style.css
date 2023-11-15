@@ -91,6 +91,50 @@ button{
 .card4{
     background-image: url(images/teamslogo.webp);
 }
+.card5{
+    background-image: url(images/redbulllogo.jpeg);
+    background-size: 215px;
+}
+.card6{
+    background-image: url(images/sflogo.png);
+    background-size: 400px;
+    background-color: crimson;
+}
+.card7{
+    background-image: url(images/mercedeslogo2.jpeg);
+    background-size: 180px;
+    background-color: #fff;
+}
+.card8{
+    background-image: url(images/mclarenlogo2.png);
+    background-size: 215px;
+}
+.card9{
+    background-image: url(images/astonmartinlogo.webp);
+    background-size: 215px;
+}
+.card10{
+    background-image: url(images/alfaromeologo.jpeg);
+    background-size: 215px;
+}
+.card11{
+    background-image: url(images/alphataurilogo.png);
+    background-size: 280px;
+}
+.card12{
+    background-image: url(images/williams-racing-logo-1.jpg);
+    background-size: 215px;
+}
+.card13{
+    background-image: url(images/haaslogo.png);
+    background-size: 225px;
+    background-color: #fff;
+}
+.card14{
+    background-image: url(images/alpinelogo2.jpeg);
+    background-size: 220px;
+    background-color: #fff;
+}
 .card:hover{
     transform: translateY(-10px);
 }
