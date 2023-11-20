@@ -14,44 +14,84 @@
       align-items: center;
       text-align: center;
     }
-    main {
-      max-width: 800px;
-      margin: 20px;
-      text-align: left;
+    body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        .navbar img {
+            margin-right: 10px;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar li {
+            margin: 0 15px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        main {
+      display: flex;
+      justify-content: space-between; /* Distribute sections evenly */
+      max-width: 1200px; /* Adjust the maximum width */
+      margin: 0 auto; /* Center the content horizontally */
     }
     section {
-      margin-bottom: 30px;
+      flex: 0 0 calc(33.33% - 20px); /* Set width for each section */
+      text-align: center; /* Center-align text within the section */
+      margin-bottom: 50px;
     }
-    
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      margin: 5px 0;
+    }
+    img {
+      max-width: 150%; /* Make images responsive */
+      height: auto;
+      max-height: 200px; /* Adjust the maximum height of images */
+      margin-bottom: 10px;
+    }
   </style>
 </head>
 <body>
-    <div class="navbar">
-        <img src="images/logo2.png" class="logo">
-        <nav>
-            <ul>
-                <li><a href="home.html">HOME</a></li>
-                <li><a href="region.html">REGION</a></li>
-                <li><a href="about.html">CONTACT US</a></li>
-            </ul>
-        </nav>
-     </div>
+  <div class="navbar">
+    <img src="images/logo2.png" class="logo">
+    <nav>
+      <ul>
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="region.html">REGION</a></li>
+        <li><a href="about.html">CONTACT US</a></li>
+      </ul>
+    </nav>
+  </div>
   <header>
     <h1>Formula 1 Races Around the World</h1>
   </header>
 
   <main>
-    <section id="regions">
-      <h2>Race Regions</h2>
-      <ul>
-        <li><a href="#europe">Europe</a></li>
-        <li><a href="#asia">Asia</a></li>
-        <li><a href="#americas">Americas</a></li>
-      </ul>
-    </section>
-
     <section id="europe">
       <h3>Europe</h3>
+      <img src="images/europe.jpg" alt="Europe Image">
       <p>List of Formula 1 races in Europe:</p>
       <ul>
         <li>Monaco Grand Prix</li>
@@ -62,6 +102,7 @@
 
     <section id="asia">
       <h3>Asia</h3>
+      <img src="images/regionsing.png" alt="Asia Image">
       <p>List of Formula 1 races in Asia:</p>
       <ul>
         <li>Singapore Grand Prix</li>
@@ -72,6 +113,7 @@
 
     <section id="americas">
       <h3>Americas</h3>
+      <img src="images/regionamer.jpg" alt="Americas Image">
       <p>List of Formula 1 races in the Americas:</p>
       <ul>
         <li>United States Grand Prix</li>
