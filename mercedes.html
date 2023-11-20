@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>f1</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+
+<body>
+    <div class="mercar">
+        <img src="images/mercedeslogo.png" class="logo">
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="region.html">REGION</a></li>
+                    <li><a href="about.html">Contact Us</a></li>
+                    <li><a href="teams.html"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="container9" id="team">
+        <a href="#" class="btn"></a>
+        <div class="content">
+        <h2>Mercedes</h2>
+        <h1>W14</h1>
+        <p>Red Bull Racing an Austrian Formula One Team with being 6 times constructor champions and 7 times driver's champions in Formula One history</p>
+        <h3>Choose a Person</h3>
+        <div class="per-select">
+            <div id="prin"></div>
+            <div id="first"></div>
+            <div id="second"></div>
+        </div>
+    </div>
+    </div>
+    <script>
+        let prinBtn = document.getElementById("prin");
+        let firstBtn = document.getElementById("first");
+        let secondBtn = document.getElementById("second");
+        let team = document.getElementById("team");
+
+        prinBtn.onclick = function(){
+            team.style.backgroundImage = "url(images/Merc2.png)"
+        }
+        firstBtn.onclick = function(){
+            team.style.backgroundImage = "url(images/Lewis2.png)"
+        }
+        secondBtn.onclick = function(){
+            team.style.backgroundImage = "url(images/Russell2.png)"
+        }
+    </script>
+       <footer>
+        Copyright &copy; Esdras & Jorge CSCI 1101
+    </footer>
+</body>
+</html>
